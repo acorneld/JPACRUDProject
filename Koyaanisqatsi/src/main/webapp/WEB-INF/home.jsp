@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>   
-    
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +10,37 @@
 </head>
 <body>
 
-<h1>Welcome</h1>
 
-${DEBUG}
+	<main class="container-fluid"></main>
+	<h1>Welcome to the CSGO Team Database</h1>
+
+	<form action="getTeam.do" method="GET">
+		Team ID: <input type="text" name="id" /> <input type="submit"
+			value="Show Team" />
+	</form>
+
+<table class="table table-striped">
+			<thead class="table-dark">
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+				<!-- 	<th>Rank</th>
+					<th>Average Age</th>
+					<th>Coach</th>
+					<th>Star Player</th> -->
+				</tr>
+			</thead>
+			<tbody>
+				<c:forEach var="t" items="${teams}">
+					<tr>
+						<td>${t.id}</td>
+						<td><a href="getTeam.do?id=${t.id}">${t.name}</a></td>
+					</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+
+	</main>
 
 </body>
 </html>

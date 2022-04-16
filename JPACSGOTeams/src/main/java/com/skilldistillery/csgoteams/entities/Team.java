@@ -78,8 +78,8 @@ public class Team {
 
 	@Override
 	public String toString() {
-		return "Team [id=" + id + ", name=" + name + ", rank=" + rank + ", averageAge=" + averageAge + ", coach="
-				+ coach + ", starPlayer=" + starPlayer + "]";
+		return "Team Id= " + id + ", Name= " + name + ", Rank= #" + rank + ", Average Age= " + averageAge + ", Coach= "
+				+ coach + ", Star Player= " + starPlayer;
 	}
 
 }
