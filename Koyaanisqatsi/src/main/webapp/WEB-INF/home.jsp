@@ -15,11 +15,21 @@
 	<h1>Welcome to the CSGO Team Database</h1>
 
 	<form action="getTeam.do" method="GET">
-		Team ID: <input type="text" name="id" /> <input type="submit"
+		Search Team ID: <input type="text" name="id" /> <input type="submit"
 			value="Show Team" />
 	</form>
+	<br>
 
-<table class="table table-striped">
+	<div>
+		<button class="button" onclick="document.location = 'addteam.html'">Add
+			A New Team</button>
+	</div>
+
+
+
+
+
+	<table class="table table-striped">
 			<thead class="table-dark">
 				<tr>
 					<th>ID</th>

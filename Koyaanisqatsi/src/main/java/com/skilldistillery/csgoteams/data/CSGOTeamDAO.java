@@ -7,7 +7,9 @@ import com.skilldistillery.csgoteams.entities.Team;
 public interface CSGOTeamDAO {
 
 	
-	Team findById(int teamId);
+	public Team findById(int teamId);
 	
-	List<Team> findAll();
+	public List<Team> findAll();
+
+	public Team addTeam(Team t);
 }

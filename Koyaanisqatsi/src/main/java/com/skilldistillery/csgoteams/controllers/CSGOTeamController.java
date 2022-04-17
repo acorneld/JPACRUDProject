@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.skilldistillery.csgoteams.data.CSGOTeamDAO;
 import com.skilldistillery.csgoteams.entities.Team;
@@ -34,4 +37,14 @@ public class CSGOTeamController {
 	}
 	
 	
+	@RequestMapping(path="addTeam.do")
+		public String addTeam(Team team, Model model) {
+		Team newTeam = teamDao.addTeam(team);
+		model.addAttribute("team", newTeam);
+		
+		return "show";
+	}
+
+	
+
 }
