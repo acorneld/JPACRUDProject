@@ -23,7 +23,7 @@
 	</div>
 	
 	<div>
-		<button class="button" onclick="document.location = 'localhost:8083'">HOME</button>
+		<a href="/"class="btn btn-lg btn-success">Home</a>
 	</div>
 	
 </body>

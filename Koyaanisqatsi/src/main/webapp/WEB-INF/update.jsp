@@ -24,6 +24,9 @@
 	
 	<input type ="submit" value="Submit">
 	
+	<div>
+		<a href="/"class="btn btn-lg btn-success">Home</a>
+	</div>
 	
 	</form>
 
