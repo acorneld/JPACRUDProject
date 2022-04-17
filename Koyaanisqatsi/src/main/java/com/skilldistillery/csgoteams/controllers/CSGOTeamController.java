@@ -44,6 +44,30 @@ public class CSGOTeamController {
 		
 		return "show";
 	}
+	
+	@RequestMapping(path="deleteTeam.do", method=RequestMethod.POST)
+		public String deleteTeam(int id) {
+		Boolean deleted = teamDao.deleteTeam(id);
+		
+		return "show";
+	}
+	
+	@RequestMapping(path="update.do", method=RequestMethod.GET)
+		public String update(Model model, int id) {
+		Team team = teamDao.findById(id);
+		model.addAttribute("team", team);
+		
+		return "update";
+	}
+	
+	@RequestMapping(path="updateTeam.do", method=RequestMethod.POST)
+		public String update(int id, Team team, Model model) {
+		Team newTeam = teamDao.updateTeam(id, team);
+		model.addAttribute("team", newTeam);
+		return "show";
+	}
+	
+	
 
 	
 

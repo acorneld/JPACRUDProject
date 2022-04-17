@@ -54,4 +54,28 @@ public class CSGOTEAMDaoImpl implements CSGOTeamDAO {
 		return team;
 	}
 
+	@Override
+	public Boolean deleteTeam(int id) {
+		boolean deleted = false;
+		Team team = em.find(Team.class, id);
+		if(team != null) {
+			em.remove(team);
+		}
+		em.flush();
+		deleted = !em.contains(team);
+		return deleted;
+	}
+	
+	@Override
+	public Team updateTeam(int id, Team team) {
+		Team updated = em.find(Team.class, id);
+		updated.setName(team.getName());
+		updated.setRank(team.getRank());
+		updated.setAverageAge(team.getAverageAge());
+		updated.setCoach(team.getCoach());
+		updated.setStarPlayer(team.getStarPlayer());
+		em.flush();
+		return updated;
+	}
+
 }

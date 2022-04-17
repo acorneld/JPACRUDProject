@@ -33,7 +33,7 @@ class TeamTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		csgoteam = em.find(Team.class, 1);
+		csgoteam = em.find(Team.class, 2);
 	}
 
 	@AfterEach
@@ -46,7 +46,7 @@ class TeamTest {
 	@Test
 	void test_CSGOTeam_entity_mapping() {
 		assertNotNull(csgoteam);
-		assertEquals("Astralis", csgoteam.getName());
+		assertEquals("TEST2", csgoteam.getName());
 	}
 
 }

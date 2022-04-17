@@ -21,5 +21,10 @@
 		</div>
 
 	</div>
+	
+	<div>
+		<button class="button" onclick="document.location = 'localhost:8083'">HOME</button>
+	</div>
+	
 </body>
 </html>

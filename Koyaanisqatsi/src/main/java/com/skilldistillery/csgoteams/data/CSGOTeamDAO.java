@@ -12,4 +12,10 @@ public interface CSGOTeamDAO {
 	public List<Team> findAll();
 
 	public Team addTeam(Team t);
+
+	public Boolean deleteTeam(int id);
+
+	Team updateTeam(int id, Team team);
+	
+	
 }
