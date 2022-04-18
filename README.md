@@ -27,15 +27,15 @@
 
 ## About The Project
 
-<p>SpringMVCFilmCRUD is a Dynamic Web Application that allows the user to perform the following operations on a Film in the SD MYSQL Film Database.</p>
+<p>CSGOTeam Database App is a Dynamic Web Application, with a database on the backend that allows the user to perform the following operations on a Team in the CSGOTeam Database.</p>
 <ol>
-<li><strong><em>C</em></strong>reate - Create a new Film in the database with the "Add A Film" Button</li>
+<li><strong><em>C</em></strong>reate - Create a new Team in the database with the "Add A Team" Button</li>
 <br>
-<li><strong><em>R</em></strong>ead - View the current information for a Film in the database</li>
+<li><strong><em>R</em></strong>ead - View the current information for a Team in the database</li>
 <br>
-<li><strong><em>U</em></strong>pdate - Update Predefined Fields of a Film in the database</li>
+<li><strong><em>U</em></strong>pdate - Update Predefined Fields of a Team in the database, with some mandatory entrys</li>
 <br>
-<li><strong><em>D</em></strong>elete - Remove Existing Films in the database</li>
+<li><strong><em>D</em></strong>elete - Remove Existing Teams in the database</li>
 </ol>
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
@@ -57,47 +57,42 @@
 
 <ol>
 <li>
-The MVCFilmSite Dynamic Web App is Run on a Apache Tomahawk v8.5 server and launched through Spring Tool Suite 4
+The CSGOTeam Database and Dynamic Web App is Run on a Apache Tomahawk v8.5 server and launched through Spring Tool Suite 4
 </li>
 <li>
 Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</strong>
 </li>
 <li>
-<strong>Find Film By Id</strong> navigates to <strong>findFilmById.html</strong> where the user is prompted for the Film Id they would like to retrieve from the database.
+<strong>Find Team By Id</strong> navigates to <strong>findTeamById.html</strong> where the user is prompted for the Teamm Id they would like to retrieve from the database.
 </li>
 <ul>
-<li>All information for the requested Film is then retrieved by way of the SpringMVC provided <strong>getFilmData.do</strong> RequestMapping found in the <strong>FilmController.java</strong>
-</li>
-<li>User is then prompted with Two options for the displayed Film</li>
+<li>All information for the requested team is then retrieved by way of the SpringMVC provided <strong>getTeam.do</strong> RequestMapping found in the <strong>TeamController.java</strong>
+
   <ol>
-    <li>Delete Film</li>
+    <li>Delete Team</li>
       <ul>
-        <li>The selected film is removed from the database by way of the SpringMVC provided <strong>deleteFilm.do</strong> RequestMapping found in the FilmController.java and user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong></li>
+        <li>The selected team is removed from the database by way of the SpringMVC provided <strong>deleteTeamm.do</strong> RequestMapping found in the CSGOTeamController.java and user is returned to the aforementioned homepage at if the select the home button<strong>/WEB-INF/home.jsp</strong></li>
       </ul>
-    <li>Update Film</li>
+    <li>Update Team</li>
       <ul>
         <li>
-        The selected film is displayed for editing through <strong>updateFilm.html</strong> with the current values shown</li>
+        The selected film is displayed for editing through <strong>updateTeam.html</strong> with the current values shown</li>
         <li>
-        User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+        User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateTeam.do RequestMapping found in the CSGOTeamController.java and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
         </li>
       </ul>
   </ol>
 
 </ul>
 <li>
-<strong>Add A Film</strong> navigates to <strong>addFilm.html</strong> where the user is prompted to enter the Film's Title, Description, Release Year, Rating, and Length
+<strong>Add A Team</strong> navigates to <strong>addTeam.html</strong> where the user is prompted to enter the Team's Name, Rank, Coach, Average Age, and Star Player
 </li>
   <ul>
     <li>
-    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then user is given the option to click Home and  be returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
-  </ul>
-<li><strong>Search Film by Keyword/Pattern</strong> navigates to <strong>findFilmByKeyword.html</strong> where the user is displayed Films matching the inputed Keyword/Pattern.</li>
-  <ul>
-    <li> The user is then presented with the option of Updating or Deleting any of the displayed Films.  Update Film! will remove the Film from the database by way of the SpringMVC provided <strong>updateFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then the user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
-    </li>
-    <li> Delete Team! will remove the Team from the database by way of the SpringMVC provided <strong>deleteTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then the user is given the option to return home <strong>/WEB-INF/home.jsp</strong>
+
+    <li> Delete Team! will remove the Team from the database by way of the SpringMVC provided <strong>deleteTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then the user is given the option to return home by clicking the Home button<strong>/WEB-INF/home.jsp</strong>
     </li>
     <li> Update Team will carry the user through the previously explained update sequence.
     </li>
