@@ -92,7 +92,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
     When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then user is given the option to click Home and  be returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
 
-    <li> Delete Team! will remove the Team from the database by way of the SpringMVC provided <strong>deleteTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then the user is given the option to return home by clicking the Home button<strong>/WEB-INF/home.jsp</strong>
+    <li> Delete Team will remove the Team from the database by way of the SpringMVC provided <strong>deleteTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then the user is given the option to return home by clicking the Home button<strong>/WEB-INF/home.jsp</strong>
     </li>
     <li> Update Team will carry the user through the previously explained update sequence.
     </li>
@@ -113,7 +113,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 <li> E-mail: acorneld@gmail.com</li>
 </ul>
 
-Project Link: [SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
+Project Link: [JPACRUD Project](https://github.com/acorneld/JPACRUDProject)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -121,11 +121,12 @@ Project Link: [SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
 
 ## Acknowledgments
 
--   [Film Query App Foundation](https://github.com/anthonyb0824/FilmQueryProject)
--   [Film Query App Reference #1](https://github.com/Cagugu/FilmQueryProject)
--   [Film Query App Reference #2](https://github.com/acorneld/FilmQueryProject)
+-   [Film Query App](https://github.com/acorneld/FilmQueryProject)
 -   [Stack Overflow](https://stackoverflow.com/)
 -   [W3 Schools](https://www.w3schools.com/)
 -   [Github - othneildrew](https://github.com/othneildrew/Best-README-Template)
+
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
