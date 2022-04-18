@@ -66,7 +66,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 <strong>Find Team By Id</strong> navigates to <strong>findTeamById.html</strong> where the user is prompted for the Teamm Id they would like to retrieve from the database.
 </li>
 <ul>
-<li>All information for the requested team is then retrieved by way of the SpringMVC provided <strong>getTeam.do</strong> RequestMapping found in the <strong>TeamController.java</strong>
+<li>All information for the requested team is then retrieved by way of the SpringMVC provided <strong>getTeam.do</strong> RequestMapping found in the <strong>TeamController.java</strong>  The user also has two other main screen options.
 
   <ol>
     <li>Delete Team</li>
@@ -92,10 +92,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
     When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then user is given the option to click Home and  be returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
 
-    <li> Delete Team will remove the Team from the database by way of the SpringMVC provided <strong>deleteTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then the user is given the option to return home by clicking the Home button<strong>/WEB-INF/home.jsp</strong>
-    </li>
-    <li> Update Team will carry the user through the previously explained update sequence.
-    </li>
+  
   </ul>
 </ol>
 
