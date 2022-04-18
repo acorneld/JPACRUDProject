@@ -76,7 +76,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
     <li>Update Team</li>
       <ul>
         <li>
-        The selected film is displayed for editing through <strong>updateTeam.html</strong> with the current values shown</li>
+        The selected team is displayed for editing through <strong>updateTeam.html</strong> with the current values shown</li>
         <li>
         User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateTeam.do RequestMapping found in the CSGOTeamController.java and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
         </li>
@@ -92,7 +92,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
     When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addTeam.do</strong> RequestMapping found in the <strong>CSGOTeamController.java</strong> and then user is given the option to click Home and  be returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
 
-  
+
   </ul>
 </ol>
 
